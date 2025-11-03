@@ -19,7 +19,6 @@ function NavbarBS() {
               <NavDropdown.Item href="#action/3.1">Honda</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.2">Suzuki</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.3">Kawasaki</NavDropdown.Item>
-
               <NavDropdown.Item href="#action/3.4">Yamaha</NavDropdown.Item>
               <CartWidget counter={5} />
             </NavDropdown>
