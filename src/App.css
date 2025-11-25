@@ -6,7 +6,41 @@
   margin-top: 2rem;
   text-align: center;
   background-color: #f8f9fa;
+  text-align: center;
 }
 .div-cart-widget {
   text-align: center;
+}
+.div-cards {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 3rem;
+  border: 1px solid black;
+}
+.div-detail {
+  margin-top: 2rem;
+  text-align: center;
+  background-color: white;
+  border: black 1px solid;
+  border-radius: 2rem;
+  padding: 2rem;
+  margin: auto;
+  width: 75%;
+}
+.div-detail img {
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+}
+.div-detail p {
+  font-size: 1.2rem;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.div-categorias {
+  text-align: center;
+  width: auto;
+  height: 100%;
 }
