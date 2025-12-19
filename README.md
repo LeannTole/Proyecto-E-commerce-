@@ -25,7 +25,7 @@ La aplicación simula un e-commerce donde los usuarios pueden navegar productos,
 
 ### Demo del proyecto
 
-Si se quiere ver el proyecto de forma online, ingresar al link: [Moto Shop]()
+Si se quiere ver el proyecto de forma online, ingresar al link: [Moto Shop](https://proyecto-e-commerce-eta.vercel.app/)
 
 ### Tecnlogías utilizadas
 
