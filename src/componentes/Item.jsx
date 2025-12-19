@@ -7,7 +7,9 @@ const Item = ({ prod }) => {
       <img src={prod.img} alt={prod.name} width="200px" />
       <h2>{prod.name}</h2>
       <p>Precio: ${prod.price},00</p>
-      <Link to={"/item/" + prod.id}>Descripcion</Link>
+      <Link className="btn btn-warning mb-3" to={"/item/" + prod.id}>
+        Descripcion
+      </Link>
     </div>
   );
 };

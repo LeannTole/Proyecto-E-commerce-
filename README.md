@@ -1,16 +1,44 @@
-# React + Vite
+# E-Commerce Creado con React
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Proyecto de tienda virtual desarrollado con React como parte del proceso de aprendizaje del framework.
+La aplicación simula un e-commerce donde los usuarios pueden navegar productos, agregarlos al carrito y finalizar una compra generando una orden.
 
-Currently, two official plugins are available:
+## Funcionalidades del proyecto
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Listado de productos
+- Vista de detalle de cada producto
+- Agregar y eliminar productos del carrito
+- Modificar cantidades
+- Visualización del total de la compra
+- Checkout con formulario de usuario
+- Generación de orden en Firebase
+- Validación de carrito vacío
 
-## React Compiler
+## Instalación
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+    *Es necesario tener instalado en la pc Node v20 o mayor como requisito técnico*
 
-## Expanding the ESLint configuration
+1. Clonar el repositorio. (https://github.com/LeannTole/Proyecto-E-commerce-)
+2. Ejecutar comando `cd coder-flex-81725-toledo` para moverse a la carpeta raiz del proyecto.
+3. Instalar dependencias con el comando `npm install`
+4. Para levantar el proyecto de forma local ejecutar comando `npm run dev`
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Demo del proyecto
+
+Si se quiere ver el proyecto de forma online, ingresar al link: [Moto Shop]()
+
+### Tecnlogías utilizadas
+
+- **React** – Librería principal para la construcción de la interfaz
+- **Vite** – Entorno de desarrollo
+- **Firebase** – Base de datos y almacenamiento de órdenes
+- **React Router DOM** – Navegación por rutas
+- **React Bootstrap / Bootstrap** – Estilos y componentes visuales
+
+### Estado del proyecto
+
+Finalizado - Proyecto académico para práctica de React.
+
+## Autor
+
+Leandro Lautaro Toledo

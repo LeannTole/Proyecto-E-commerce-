@@ -11,30 +11,29 @@ function NavbarBS() {
       <Container>
         <img src="../logotienda.jpg" alt="logo" className="logo-tienda" />
         <Navbar.Brand as={NavLink} to="/">
-          Bienvenidos a mi Tienda
+          MotoShop!
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
             <Nav.Link as={NavLink} to="/">
-              Home
+              Inicio
             </Nav.Link>
-
             <NavDropdown title="Nuestras Motos" id="basic-nav-dropdown">
-              <NavDropdown.Item as={NavLink} to="/categoria/Honda">
+              <NavDropdown.Item as={NavLink} to="/category/Honda">
                 Honda
               </NavDropdown.Item>
-              <NavDropdown.Item as={NavLink} to="/categoria/Suzuki">
+              <NavDropdown.Item as={NavLink} to="/category/Suzuki">
                 Suzuki
               </NavDropdown.Item>
-              <NavDropdown.Item as={NavLink} to="/categoria/Kawasaki">
+              <NavDropdown.Item as={NavLink} to="/category/Kawasaki">
                 Kawasaki
               </NavDropdown.Item>
-              <NavDropdown.Item as={NavLink} to="/categoria/Yamaha">
+              <NavDropdown.Item as={NavLink} to="/category/Yamaha">
                 Yamaha
               </NavDropdown.Item>
-              <CartWidget counter={5} />
             </NavDropdown>
+            <CartWidget counter={5} />{" "}
           </Nav>
         </Navbar.Collapse>
       </Container>

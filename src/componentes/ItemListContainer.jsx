@@ -1,29 +1,48 @@
 import { useEffect, useState } from "react";
-import { getProducts } from "../mock/Fakedata";
-import ItemList from "./itemlist";
+import ItemList from "./ItemList";
 import "../App.css";
 import { useParams } from "react-router-dom";
+import LoaderComponent from "./LoaderComponent";
+import { addDoc, collection, getDocs, query, where } from "firebase/firestore";
+import { db } from "../service/firebase";
 
-const ItemListContainer = ({ mensaje }) => {
+const ItemListContainer = () => {
   const [data, setData] = useState([]);
+  const [loading, setLoading] = useState(false);
   const { type } = useParams();
+
   useEffect(() => {
-    getProducts()
+    setLoading(true);
+
+    const prodCollection = type
+      ? query(collection(db, "productos"), where("category", "==", type))
+      : collection(db, "productos");
+
+    getDocs(prodCollection)
       .then((res) => {
-        if (type) {
-          setData(res.filter((item) => item.category === type));
-        } else {
-          setData(res);
-        }
+        const list = res.docs.map((doc) => ({
+          id: doc.id,
+          ...doc.data(),
+        }));
+        setData(list);
       })
-      .catch((error) => console.log(error));
+      .catch((error) => console.log(error))
+      .finally(() => setLoading(false));
   }, [type]);
 
   return (
-    <div>
-      <h1 className="text-success">{mensaje}</h1>
-      <ItemList data={data} />
-    </div>
+    <>
+      {loading ? (
+        <LoaderComponent
+          texto={type ? "Cargando categoría..." : "Cargando productos..."}
+        />
+      ) : (
+        <div>
+          <ItemList data={data} />
+        </div>
+      )}
+    </>
   );
 };
+
 export default ItemListContainer;

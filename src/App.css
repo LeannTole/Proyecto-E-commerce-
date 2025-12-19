@@ -44,3 +44,12 @@
   width: auto;
   height: 100%;
 }
+.div-alertas {
+  margin-top: 2rem;
+  text-align: center;
+  background-color: #f8f9fa;
+  padding: 2rem;
+  border-radius: 1rem;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
