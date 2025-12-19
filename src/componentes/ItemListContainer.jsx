@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import ItemList from "./ItemList";
+import ItemList from "./itemlist";
 import "../App.css";
 import { useParams } from "react-router-dom";
 import LoaderComponent from "./LoaderComponent";
